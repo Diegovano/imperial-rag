@@ -2,10 +2,12 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100%;
+  font-size: 2.5vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #top {
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
 
   height: 100%;
@@ -24,9 +26,8 @@ html, body {
 }
 
 #logoBox {
-  align-self: center;
-
-  flex-shrink: 0;
+  /* align-self: center;
+  flex-shrink: 0; */
   padding: 10px;
 
 }
@@ -37,8 +38,10 @@ html, body {
 
 #navbar {
   display: flex;
-  justify-content: space-evenly;
-  align-items: stretch;
+  width: 80%;
+  margin-right: 10px;
+  /* justify-content: space-evenly;
+  align-items: stretch; */
 }
 
 a.navbarLink {
@@ -57,11 +60,18 @@ a.navbarLink > div {
   flex: 1;
   display: flex;
   align-items: center;
+  justify-content: center;
+  text-align: center;
 
   background-color: red;
 
+  height: 35px;
   padding: 10px;
   width: 100%;
+}
+
+h1 {
+  text-align: center;
 }
 
 #content {
@@ -74,9 +84,11 @@ a.navbarLink > div {
 }
 
 #footer {
-  flex: 10vh;
+  /* flex: 10vh; */
   flex-grow: 0;
+  /* height: 100px; */
 
-  padding: 10px 25px;
+  padding: 25px 25px;
+  margin: ;
   background-color: pink;
 }
