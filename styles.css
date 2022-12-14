@@ -2,13 +2,16 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100%;
-  font-size: 2.5vh;
+  font-size: 1.2em;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #dadada;
+  background-color: #2d1739;
+  text-align: justify;
 }
 
 #top {
   /* display: flex; */
-  flex-direction: column;
+  /* flex-direction: column; */
 
   height: 100%;
   margin: 0;
@@ -21,8 +24,9 @@ html, body {
   flex-grow: 0;
 
   display: flex;
+  /* position: fixed; */
 
-  background-color: blue;
+  background-color: #753d94;
 }
 
 #logoBox {
@@ -33,7 +37,7 @@ html, body {
 }
 
 #headerLogo {
-  max-width: 100px;
+  max-width: 200px;
 }
 
 #navbar {
@@ -50,8 +54,9 @@ a.navbarLink {
 
   flex: 1;
   align-self: center;
-  height: 50%;
+  height: 7.5vh;
   margin: 0 10px;
+  max-width: 300px;
 
   text-decoration: none;
 }
@@ -63,15 +68,44 @@ a.navbarLink > div {
   justify-content: center;
   text-align: center;
 
-  background-color: red;
+  border-radius: 10px;
+  background-color: #ff3696;
+  color: black;
+  transition: ease 0.2s;
 
-  height: 35px;
+  box-shadow: 2px 3px rgba(0, 0, 0, 0.171);
+
   padding: 10px;
   width: 100%;
 }
 
+a.navbarLink > div:hover {
+  background-color: #ff71b6;
+  transition: ease 0.2s;
+}
+
+a.navbarLink > div:active {
+  transform: translate(0, 2px);
+  transition: ease 0.01s;
+
+  box-shadow: 0.2px 1px rgba(0, 0, 0, 0.171);
+}
+
+hr {
+  border: 2px solid #f1b727;
+}
+
 h1 {
   text-align: center;
+  margin: 20px 0;
+}
+
+h2 {
+  margin: 20px 0 10px;
+}
+
+p {
+  margin: 20px 0;
 }
 
 #content {
@@ -79,16 +113,105 @@ h1 {
 
   overflow: auto;
   padding: 25px;
+  margin-bottom: 100px;
+  
+  padding: 0 20vw;
 
-  background-color: green;
+  /* margin-top: 300px; */
+
+  background-color: #2d1739;
+}
+
+#committee {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+
+  margin: 30px;
+}
+.member > img {
+  width: 200px;
+  border-radius: 10px 10px 0 0;
+}
+
+.member > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  color: #101010;
+  background-color: #f89f5b;
+  width: 200px;
+  /* border-top: solid 4px #ff3696; */
+  border-radius: 0 0 10px 10px;
+  padding: 10px 0 15px 0;
+}
+
+.memNoImg > div {
+  border-radius: 10px;
+}
+
+.memberName {
+  font-weight: 700;
+}
+
+.memberRole {
+  font-style: italic;
+}
+
+@media only screen and (max-width: 600px) {
+  #content {
+    padding: 0 20px;
+  }
+}
+
+a {
+  /* text-decoration: none; */
+  color: #afafaf;
+  transition: ease 0.2s;
+}
+
+a:hover {
+  color: #cacaca;
+  transition: ease 0.2s;
+}
+
+#footerLogos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#instagramlogo {
+  width: 30px;
+  color: #ffffff;
+  margin: 0 10px;
+
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin: 0 20px;
+}
+
+#unionlogo {
+  width: 100px;
+  align-self: center;
+  margin: 0 20px;
 }
 
 #footer {
-  /* flex: 10vh; */
+  margin-top: auto;
   flex-grow: 0;
-  /* height: 100px; */
+  text-align: center;
 
   padding: 25px 25px;
-  margin: ;
-  background-color: pink;
+  background-color: #753d94;
 }
