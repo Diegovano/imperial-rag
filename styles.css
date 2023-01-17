@@ -1,8 +1,7 @@
 html, body {
   margin: 0;
   padding: 0;
-  height: 100%;
-  font-size: 1.2em;
+  font-size: 1.1em;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #dadada;
   background-color: #2d1739;
@@ -13,7 +12,6 @@ html, body {
   /* display: flex; */
   /* flex-direction: column; */
 
-  height: 100%;
   margin: 0;
   padding: 0;
   align-content: stretch;
@@ -22,9 +20,15 @@ html, body {
 #header {
   flex: 15vh;
   flex-grow: 0;
-
   display: flex;
-  /* position: fixed; */
+  
+  width: 100%;
+  top: 0;
+  position: fixed;
+
+  transition: 0.2s;
+
+  font-size: 1.2em;
 
   background-color: #753d94;
 }
@@ -38,6 +42,7 @@ html, body {
 
 #headerLogo {
   max-width: 200px;
+  transition: 0.2s;
 }
 
 #navbar {
@@ -114,6 +119,7 @@ p {
   overflow: auto;
   padding: 25px;
   margin-bottom: 100px;
+  margin-top: 226px;
   
   padding: 0 20vw;
 
@@ -137,7 +143,7 @@ p {
   margin: 20px;
 }
 .member > img {
-  width: 250px;
+  width: 270px;
   border-radius: 10px 10px 0 0;
 }
 
@@ -166,12 +172,6 @@ p {
 .memberRole {
   font-style: italic;
   text-align: center;
-}
-
-@media only screen and (max-width: 600px) {
-  #content {
-    padding: 0 20px;
-  }
 }
 
 a {

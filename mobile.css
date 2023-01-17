@@ -1,0 +1,30 @@
+#header {
+  flex-direction: column;
+  align-items: center;
+}
+
+#headerLogo {
+  margin: auto;
+}
+
+#navbar {
+  padding-bottom: 20px;
+  font-size: 0.9em;
+  margin: 0;
+  width: 95%;
+}
+
+#content {
+  margin-top: 300px;
+}
+
+h1 {
+  font-size: 1.5em;
+}
+html, body {
+  font-size: 0.9em;
+}
+
+#content {
+  padding: 0 50px;
+}
