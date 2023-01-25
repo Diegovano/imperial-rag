@@ -18,15 +18,14 @@ html, body {
 }
 
 #header {
-  flex: 15vh;
-  flex-grow: 0;
   display: flex;
   
   width: 100%;
   top: 0;
+  height: 250px;
   position: fixed;
 
-  transition: 0.2s;
+  /* transition: 0.01s; */
 
   font-size: 1.2em;
 
@@ -34,15 +33,15 @@ html, body {
 }
 
 #logoBox {
-  /* align-self: center;
-  flex-shrink: 0; */
+  display: flex;
   padding: 10px;
-
+  align-items: center;
 }
 
 #headerLogo {
   max-width: 200px;
   transition: 0.2s;
+
 }
 
 #navbar {
@@ -59,7 +58,7 @@ a.navbarLink {
 
   flex: 1;
   align-self: center;
-  height: 7.5vh;
+  /* height: 7.5vh; */
   margin: 0 10px;
   max-width: 300px;
 
@@ -119,7 +118,7 @@ p {
   overflow: auto;
   padding: 25px;
   margin-bottom: 100px;
-  margin-top: 226px;
+  margin-top: 250px;
   
   padding: 0 20vw;
 
