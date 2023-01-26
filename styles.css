@@ -4,7 +4,7 @@ html, body {
   font-size: 1.1em;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #dadada;
-  background-color: #2d1739;
+  background-color: #864273;
   text-align: justify;
 }
 
@@ -25,23 +25,23 @@ html, body {
   height: 250px;
   position: fixed;
 
-  /* transition: 0.01s; */
+  /* transition: 0.2s; */
 
   font-size: 1.2em;
 
-  background-color: #753d94;
+  background-color: #864273;
 }
 
 #logoBox {
   display: flex;
-  padding: 10px;
+  padding: 10px 30px;
   align-items: center;
 }
 
 #headerLogo {
-  max-width: 200px;
+  /* max-width: 200px; */
+  width: 200px;
   transition: 0.2s;
-
 }
 
 #navbar {
@@ -58,7 +58,7 @@ a.navbarLink {
 
   flex: 1;
   align-self: center;
-  /* height: 7.5vh; */
+  height: 7.5vh;
   margin: 0 10px;
   max-width: 300px;
 
@@ -73,7 +73,7 @@ a.navbarLink > div {
   text-align: center;
 
   border-radius: 10px;
-  background-color: #ff3696;
+  background-color: #f4d35e;
   color: black;
   transition: ease 0.2s;
 
@@ -84,7 +84,7 @@ a.navbarLink > div {
 }
 
 a.navbarLink > div:hover {
-  background-color: #ff71b6;
+  background-color: #ffeeb0;
   transition: ease 0.2s;
 }
 
@@ -96,7 +96,7 @@ a.navbarLink > div:active {
 }
 
 hr {
-  border: 2px solid #f1b727;
+  border: 2px solid #f4d35e;
 }
 
 h1 {
@@ -117,14 +117,13 @@ p {
 
   overflow: auto;
   padding: 25px;
-  margin-bottom: 100px;
   margin-top: 250px;
   
   padding: 0 20vw;
 
   /* margin-top: 300px; */
 
-  background-color: #2d1739;
+  background-color: #513a70;
 }
 
 #committee {

@@ -11,7 +11,13 @@
 
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" media="screen and (max-width: 700px)" href="mobile.css">
-  <script src="script.js"></script>
+  <script>
+    if (screen && screen.width > 700) {
+      document.write(`<script type="text/javascript" src="script.js"><\/script>`);
+    } else {
+      document.write(`<script type="text/javascript" src="mobile.js"><\/script>`);
+    }
+  </script>
 </head>
 
 <body>
@@ -20,7 +26,7 @@
   <div id="top">
     <div id="header">
       <a href="index.html"id="logoBox">
-        <img src="logo/rag.png" alt="Imperial Raising and Giving logo" id="headerLogo">
+        <img src="logo/ragdshadow.png" alt="Imperial Raising and Giving logo" id="headerLogo">
       </a>
       <div id="navbar">
         <a href="charities.html" class="navbarLink">
@@ -52,8 +58,8 @@
       <ul>
         <li><a href="https://www.imperialcollegeunion.org/activities/a-to-z/rag" target="_blank">Become Member</a></li>
         <li><a href="https://www.instagram.com/imperialcollegerag/" target="_blank">Catch up On latest events</a></li>
+        <li><a href="https://imperial.us21.list-manage.com/subscribe?u=630e07daf5abcee1897377452&id=5d71c02d62">Sign up to our Mailing List</a></li>
         <li>Reach out to volunteer</li>
-        <li>Sign up to our Mailing List</li>
       </ul>
       <p>We're looking forwards to meeting you, and look forwards to great times ahead!</p>
     </div>

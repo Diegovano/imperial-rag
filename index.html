@@ -11,7 +11,14 @@
 
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" media="screen and (max-width: 700px)" href="mobile.css">
-  <script src="script.js"></script>
+  <script>
+    if (screen && screen.width > 700) {
+      document.write(`<script type="text/javascript" src="script.js"><\/script>`);
+    } else {
+      document.write(`<script type="text/javascript" src="mobile.js"><\/script>`);
+    }
+  </script>
+  <!-- <script src="script.js"></script> -->
 </head>
 
 <body>
@@ -20,7 +27,7 @@
   <div id="top">
     <div id="header">
       <a href=""id="logoBox">
-        <img src="logo/rag.png" alt="Imperial Raising and Giving logo" id="headerLogo">
+        <img src="logo/ragdshadow.png" alt="Imperial Raising and Giving logo" id="headerLogo">
       </a>
       <div id="navbar">
         <a href="charities.html" class="navbarLink">
@@ -89,7 +96,7 @@
           </li>
         </ul>
         <p>Take a look at some photos from our previous events <a href="">here</a>!</p>
-      <hr>
+      <!-- <hr>
       <h2>Our Work</h2>
       <p>
         Deserunt voluptates dolorum et quam minus ex. Commodi fugiat quia mollitia nihil. Cum qui vel necessitatibus. Aliquam molestiae doloribus in hic et et modi.
@@ -112,7 +119,7 @@
       </p>
       <p>
         Quis voluptas at nihil velit. In quas ut sed eum voluptates est et molestiae. Dolores numquam sit optio rem dolorum qui quo. Eos labore ut odio. Vero enim quod autem corporis. Unde accusantium tempore consectetur vel provident eum officiis.
-      </p>
+      </p> -->
     </div>
     <div id="footer">
       <div id="footerLogos">
