@@ -17,9 +17,7 @@ module.exports = {
     'react',
     '@typescript-eslint'
   ],
-  overrides: [
-    {
-      files: ['*.ts', '*.tsx']
-    }
-  ]
+  ignorePatterns: [
+    "**/*.js"
+  ],
 };
