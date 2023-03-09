@@ -4,24 +4,22 @@ module.exports = {
     commonjs: true,
     es2021: true
   },
+  parser: '@typescript-eslint/parser',
+  parserOptions: {
+    project: './tsconfig.json',
+    tsConfigRootDir: './'
+  },
   extends: [
-    // 'plugin:react/recommended',
-    'standard-with-typescript'
-    // 'standard'
+    'plugin:@typescript-eslint/recommended',
+    'semistandard'
+  ],
+  plugins: [
+    'react',
+    '@typescript-eslint'
   ],
   overrides: [
-  ],
-  parserOptions: {
-    ecmaVersion: 'latest',
-    project: './tsconfig.json'
-  },
-  plugins: [
-    'react'
-  ],
-  ignorePatterns: [
-    './build/**/*.js'
-  ],
-  rules: {
-    'semi': always
-  }
-}
+    {
+      files: ['*.ts', '*.tsx']
+    }
+  ]
+};
